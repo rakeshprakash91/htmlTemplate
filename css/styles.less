@@ -1,14 +1,16 @@
-* {
-	padding: 0;
-	margin: 0;
-}
+@fontColor: darkgoldenrod;
+@navFontColor : white;
 #flexAlign() {
 	display: flex;
 	justify-content: center;
 	align-content: center;
 }
+* {
+	padding: 0;
+	margin: 0;
+}
 .selected {
-	color: darkgoldenrod;
+	color: @fontColor;
 	background-color: beige;
 }
 html {
@@ -22,7 +24,6 @@ body {
 }
 header {
 	background-color: black;
-	color: goldenrod;
 	float: left;
 	padding: 4px;
 	h1 {
@@ -30,20 +31,20 @@ header {
 		a {
 			text-decoration: none;
 			&:hover {
-				color: darkgoldenrod;
+				color: @fontColor;
 			}
 			&:visited {
-				color: darkgoldenrod;
+				color: @fontColor;
 			}
 			&:selected {
-				color: darkgoldenrod;
+				color: @fontColor;
 			}
 		}
 	}
 }
 nav {
 	background-color: black;
-	color: white;
+	color: @navFontColor;
 	ul {
 		#flexAlign;
 		justify-content: flex-end;
@@ -55,12 +56,12 @@ nav {
 			width: 100px;
 			text-align: center;
 			font-size: 1em;
-			border-left: 2px solid white;
+			border-left: 2px solid @navFontColor;
 		}
 	}
 }
 main {
-	color: darkgoldenrod;
+	color: @fontColor;
 	section {
 		&:first-child {
 			padding: 0;
@@ -155,7 +156,7 @@ footer {
 	bottom: 0;
 	width: 100%;
 	height: 40px;
-	color: darkgoldenrod;
+	color: @fontColor;
 	background-color: black;
 	text-align: center;
 	vertical-align: middle;

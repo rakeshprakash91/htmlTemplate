@@ -31,7 +31,7 @@
            </h2>
 			<ul>
 				<li>
-					<a href="#fd1">
+					<a href="#fd1" onclick="stopScroll()">
 						<img height="150" width="150" src="css/img/FD-1.jpg" alt="click to open dialog box" title="click to open dialog box">
 					</a>
 					<article>
@@ -39,7 +39,7 @@
 					</article>
 				</li>
 				<li>
-					<a href="#fd2">
+					<a href="#fd2" onclick="stopScroll()">
 						<img height="150" width="150" src="css/img/FD-2.jpg" alt="click to open dialog box" title="click to open dialog box">
 					</a>
 					<article>
@@ -91,13 +91,13 @@
 
 	<div id="fd1" class="modalDialog">
 		<div>
-			<a href="#close" title="Close" class="close">X</a>
+			<a href="#close" title="Close" onclick="enableScroll()" class="close">X</a>
 			<img src="css/img/FD-1.jpg" alt="">
 		</div>
 	</div>
 	<div id="fd2" class="modalDialog">
 		<div>
-			<a href="#close" title="Close" class="close">X</a>
+			<a href="#close" title="Close" onclick="enableScroll()" class="close">X</a>
 			<img src="css/img/FD-2.jpg" alt="">
 		</div>
 	</div>
