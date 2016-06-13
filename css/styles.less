@@ -109,6 +109,40 @@ main {
 				transform: scale(1.7);
 			}
 		}
+		.bookTicket {
+			li {
+				padding: 0 30px;
+				word-break: break-all;
+			}
+			.rocket {
+				top: 0;
+				left: 0;
+				height: 80px;
+				&:hover {
+					opacity: 0;
+					transition: opacity 0.4s ease 0.2s;
+					animation-name: rocketAnim;
+					animation-duration: 700ms;
+					animation-delay: 0ms;
+					animation-fill-mode: forwards;
+					animation-timing-function: linear;
+					animation-iteration-count: infinite;
+					transform-origin: 0 0;
+				}
+			}
+		}
+		.train {
+			height: 80px;
+			&:hover {
+				animation-name: trainAnim;
+				animation-duration: 1000ms;
+				animation-delay: 0ms;
+				animation-fill-mode: forwards;
+				animation-timing-function: linear;
+				animation-iteration-count: infinite;
+				transform-origin: 0 0;
+			}
+		}
 	}
 }
 article {
@@ -199,9 +233,6 @@ footer {
 		background-size: cover;
 	}
 }
-
-/* Standard syntax */
-
 @keyframes sliderAnim {
 	0% {
 		background-image: url('img/slider-1.jpg');
@@ -223,4 +254,27 @@ footer {
 		background-image: url('img/slider-5.jpg');
 		background-size: cover;
 	}
+}
+@keyframes rocketAnim {
+	0% {
+		transform: translateX(30px) translateY(46px) rotate(0deg) translate(-50%, -50%);
+		animation-timing-function: cubic-bezier(.25, .25, .75, .75);
+	}
+	100% {
+		transform: translateX(150px) translateY(-90px) rotate(0deg) translate(-50%, -50%);
+	}
+}
+@keyframes trainAnim {
+	0% {
+		transform: translate(-75px, 40px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+		animation-timing-function: cubic-bezier(.25, .25, .75, .75);
+	}
+	100% {
+		transform: translate(175px, 40px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+	}
+}
+html::after {
+	content: url(https://ga-beacon.appspot.com/UA-42910121-1/stylie?pixel);
+	position: absolute;
+	left: -999em;
 }
