@@ -1,0 +1,36 @@
+{
+  "name": "html_css3_less",
+  "version": "1.0.0",
+  "description": "A sample html file, with css3 features written in less",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rakeshprakash91/html.git"
+  },
+  "keywords": [
+    "html",
+    "css3",
+    "less"
+  ],
+  "author": "rakeshprakash91",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rakeshprakash91/html/issues"
+  },
+  "homepage": "https://github.com/rakeshprakash91/html#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-less": "^1.3.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "less": "^2.7.1",
+    "watch": "^0.18.0"
+  },
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "less": "^2.7.1",
+    "watch": "^0.18.0"
+  }
+}

@@ -1,0 +1,226 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+#flexAlign() {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+.selected {
+	color: darkgoldenrod;
+	background-color: beige;
+}
+html {
+	position: relative;
+	min-height: 100%;
+}
+body {
+	margin-bottom: 40px;
+	font-family: cursive;
+	background-color: aliceblue;
+}
+header {
+	background-color: black;
+	color: goldenrod;
+	float: left;
+	padding: 4px;
+	h1 {
+		padding: 0 10px;
+		a {
+			text-decoration: none;
+			&:hover {
+				color: darkgoldenrod;
+			}
+			&:visited {
+				color: darkgoldenrod;
+			}
+			&:selected {
+				color: darkgoldenrod;
+			}
+		}
+	}
+}
+nav {
+	background-color: black;
+	color: white;
+	ul {
+		#flexAlign;
+		justify-content: flex-end;
+		li {
+			list-style-type: none;
+			display: inline-block;
+			padding: 15px;
+			cursor: pointer;
+			width: 100px;
+			text-align: center;
+			font-size: 1em;
+			border-left: 2px solid white;
+		}
+	}
+}
+main {
+	color: darkgoldenrod;
+	section {
+		&:first-child {
+			padding: 0;
+			p.slider {
+				width: auto;
+				height: 500px;
+				-webkit-animation: sliderAnim 25s infinite;
+				animation: sliderAnim 25s infinite;
+			}
+		}
+		padding: 10px;
+		ul {
+			padding: 10px;
+			margin: 10px auto 30px;
+			#flexAlign;
+			list-style-type: none;
+			li {
+				#flexAlign;
+				flex-flow: row wrap;
+				img {
+					cursor: pointer;
+				}
+			}
+		}
+		.newDest {
+			img {
+				padding: 50px;
+				webkit-transition: all 200ms ease-in;
+				-webkit-transform: scale(1);
+				-ms-transition: all 200ms ease-in;
+				-ms-transform: scale(1);
+				-moz-transition: all 200ms ease-in;
+				-moz-transform: scale(1);
+				transition: all 200ms ease-in;
+				transform: scale(1);
+			}
+			img:hover {
+				z-index: 100;
+				-webkit-transition: all 200ms ease-in;
+				-webkit-transform: scale(1.5);
+				-ms-transition: all 200ms ease-in;
+				-ms-transform: scale(1.5);
+				-moz-transition: all 200ms ease-in;
+				-moz-transform: scale(1.5);
+				transition: all 200ms ease-in;
+				transform: scale(1.7);
+			}
+		}
+	}
+}
+article {
+	word-break: break-all;
+	word-wrap: break-word;
+	margin: 0 10px;
+}
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+	color: darkgoldenrod;
+	background-color: black;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 20px;
+}
+.modalDialog {
+	position: fixed;
+	font-family: cursive;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.9);
+	z-index: 99999;
+	opacity: 0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalDialog:target {
+	opacity: 1;
+	pointer-events: auto;
+}
+.modalDialog > div {
+	width: 760px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+}
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: 7%;
+	text-align: center;
+	top: -16px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+.close:hover {
+	background: #00d9ff;
+}
+
+/* Slider Animation*/
+
+@-webkit-keyframes sliderAnim {
+	0% {
+		background-image: url('img/slider-1.jpg');
+		background-size: cover;
+	}
+	25% {
+		background-image: url('img/slider-2.jpg');
+		background-size: cover;
+	}
+	50% {
+		background-image: url('img/slider-3.jpg');
+		background-size: cover;
+	}
+	75% {
+		background-image: url('img/slider-4.jpg');
+		background-size: cover;
+	}
+	100% {
+		background-image: url('img/slider-5.jpg');
+		background-size: cover;
+	}
+}
+
+/* Standard syntax */
+
+@keyframes sliderAnim {
+	0% {
+		background-image: url('img/slider-1.jpg');
+		background-size: cover;
+	}
+	25% {
+		background-image: url('img/slider-2.jpg');
+		background-size: cover;
+	}
+	50% {
+		background-image: url('img/slider-3.jpg');
+		background-size: cover;
+	}
+	75% {
+		background-image: url('img/slider-4.jpg');
+		background-size: cover;
+	}
+	100% {
+		background-image: url('img/slider-5.jpg');
+		background-size: cover;
+	}
+}

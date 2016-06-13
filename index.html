@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Template</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>
+        <a href="index.html">Holiday Planner</a>
+        </h1>
+    </header>
+    <nav>
+        <ul>
+            <li onclick="changePage(this)" class="selected">Home</li>
+            <li onclick="changePage(this)">About Us</li>
+            <li onclick="changePage(this)">Contact</li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <p class="slider"></p>
+        </section>
+        <section>
+            <h2>
+               Featured Destinations
+           </h2>
+            <ul>
+                <li>
+                    <a href="#fd1">
+                        <img height="150" width="150" src="css/img/FD-1.jpg" alt="click to open dialog box" title="click to open dialog box">
+                    </a>
+                    <article>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, aliquid!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quaerat a quibusdam mollitia eius, neque ipsum nulla! Ex, magnam, labore.
+                    </article>
+                </li>
+                <li>
+                    <a href="#fd2">
+                        <img height="150" width="150" src="css/img/FD-2.jpg" alt="click to open dialog box" title="click to open dialog box">
+                    </a>
+                    <article>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, aliquid!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quaerat a quibusdam mollitia eius, neque ipsum nulla! Ex, magnam, labore.
+                    </article>
+                </li>
+            </ul>
+            <h2>New Destinations</h2>
+            <ul class="newDest">
+                <li>
+                    <img height="150" width="150" src="css/img/slider-2.jpg" alt="">
+                    <article>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, aliquid!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quaerat a quibusdam mollitia eius, neque ipsum nulla! Ex, magnam, labore.
+                    </article>
+                </li>
+                <li><img height="150" width="150" src="css/img/slider-4.jpg" alt="">
+                    <article>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, aliquid!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quaerat a quibusdam mollitia eius, neque ipsum nulla! Ex, magnam, labore.
+                    </article>
+                </li>
+                <li>
+                    <img src="css/img/slider-5.jpg" height="150" width="150" alt="">
+                    <article>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, aliquid!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quaerat a quibusdam mollitia eius, neque ipsum nulla! Ex, magnam, labore.
+                    </article>
+                </li>
+            </ul>
+
+        </section>
+    </main>
+    <footer>
+        &copy; rakeshprakash91@outlook.com
+    </footer>
+
+
+    <div id="fd1" class="modalDialog">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <img src="css/img/FD-1.jpg" alt="">
+        </div>
+    </div>
+    <div id="fd2" class="modalDialog">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <img src="css/img/FD-2.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
