@@ -112,7 +112,7 @@ main section .newDest img:hover {
   transform: scale(1.7);
 }
 main section .bookTicket li {
-  padding: 0 30px;
+  padding: 0 10px;
   word-break: break-all;
 }
 main section .bookTicket .rocket {
@@ -269,4 +269,3 @@ footer {
     transform: translate(175px, 40px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
   }
 }
-
