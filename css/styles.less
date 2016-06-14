@@ -9,6 +9,24 @@
 	padding: 0;
 	margin: 0;
 }
+@media (min-width: 640) {
+	font-size: 0.9rem;
+}
+@media (min-width: 768px) {
+	body {
+		font-size: 1rem;
+	}
+}
+@media (min-width:960px) {
+	body {
+		font-size: 1.2rem;
+	}
+}
+@media (min-width:1060px) {
+	body {
+		font-size: 1rem;
+	}
+}
 .selected {
 	color: @fontColor;
 	background-color: beige;
@@ -146,6 +164,10 @@ main {
 		}
 	}
 }
+img {
+	max-width: 100%;
+	//	height: auto;
+}
 article {
 	word-break: break-all;
 	word-wrap: break-word;
@@ -182,7 +204,7 @@ footer {
 	pointer-events: auto;
 }
 .modalDialog > div {
-	width: 760px;
+	width: 40em;
 	position: relative;
 	margin: 10% auto;
 	padding: 5px 20px 13px 20px;
@@ -193,7 +215,7 @@ footer {
 	color: #FFFFFF;
 	line-height: 25px;
 	position: absolute;
-	right: 7%;
+	right: 0;
 	text-align: center;
 	top: -16px;
 	width: 24px;
