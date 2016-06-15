@@ -16,3 +16,12 @@ function stopScroll() {
 function enableScroll() {
 	document.body.style.overflow = "auto";
 }
+
+function toggleMenu() {
+	var currElem = document.querySelectorAll("nav ul")[0];
+	if (currElem.offsetHeight) {
+		currElem.style.display = "none";
+	} else {
+		currElem.style.display = "block";
+	}
+}

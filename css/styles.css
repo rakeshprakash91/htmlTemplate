@@ -273,6 +273,15 @@ main section .bookTicket li {
   }
 }
 /*-------------------------------------------------------------------*/
+@media screen and (min-width: 640px) and (max-width: 1600px) {
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    display: flex!important;
+    justify-content: flex-end;
+  }
+}
 @media screen and (min-width: 120px) and (max-width: 640px) {
   body {
     position: relative;
@@ -281,30 +290,61 @@ main section .bookTicket li {
     max-width: 100%;
     margin: 0;
   }
-  header {
+  body header {
     display: block;
     background-color: black;
     width: 100%;
   }
-  header h1 {
+  body header h1 {
     padding: 0 10px;
   }
-  header h1 a {
+  body header h1 a {
     text-decoration: none;
   }
-  header h1 a:hover {
+  body header h1 a:hover {
     color: darkgoldenrod;
   }
-  header h1 a:visited {
+  body header h1 a:visited {
     color: darkgoldenrod;
   }
-  header h1 a:selected {
+  body header h1 a:selected {
     color: darkgoldenrod;
   }
-  nav ul {
-    display: block;
+  body header h1 span {
+    content: " ";
+    border: 2px solid darkgoldenrod;
+    width: 34px;
+    display: inline-block;
+    height: 0px;
+    position: relative;
+    float: right;
+    top: 15px;
+    cursor: pointer;
   }
-  nav ul li {
+  body header h1 span:after {
+    content: " ";
+    border: 2px solid darkgoldenrod;
+    width: 34px;
+    display: inline-block;
+    height: 0px;
+    position: relative;
+    top: -75px;
+    left: -2px;
+  }
+  body header h1 span:before {
+    content: " ";
+    border: 2px solid darkgoldenrod;
+    width: 34px;
+    display: inline-block;
+    height: 0px;
+    position: relative;
+    top: -31px;
+    left: -2px;
+  }
+  body nav ul {
+    display: none;
+  }
+  body nav ul li {
     display: block;
     list-style-type: none;
     padding: 5px;
@@ -313,17 +353,17 @@ main section .bookTicket li {
     margin: 0;
     cursor: pointer;
   }
-  main section {
+  body main section {
     padding-bottom: 20px;
   }
-  main section:first-child p.slider {
+  body main section:first-child p.slider {
     height: 250px;
     width: auto;
   }
-  main section ul {
+  body main section ul {
     display: block;
   }
-  main section ul li {
+  body main section ul li {
     display: flex;
     list-style-type: none;
     padding: 5px;
@@ -332,15 +372,16 @@ main section .bookTicket li {
     margin: 0;
     cursor: pointer;
   }
-  main section ul li img {
+  body main section ul li img {
     width: 350px;
     height: 200px;
   }
-  main section .rocket,
-  main section .train,
-  main section .bus {
+  body main section .rocket,
+  body main section .train,
+  body main section .bus {
     width: 80px;
     height: 80px;
   }
 }
 /*-----------------------------------------------------------------*/
+/*-----------------------------------------------*/
