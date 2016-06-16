@@ -257,6 +257,25 @@ main section .bookTicket li {
 .close:hover {
   background: #00d9ff;
 }
+.bell {
+  position: relative;
+  cursor: pointer;
+  top: -22px;
+  left: -15px;
+  height: 80px;
+}
+.bell:hover {
+  animation-name: bellAnim;
+  animation-duration: 100ms;
+  animation-delay: 0ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transform-origin: 0 0;
+}
+.bkTkt {
+  float: left;
+}
 @keyframes rocketAnim {
   0% {
     transform: translateX(30px) translateY(46px) rotate(0deg) translate(-50%, -50%);
@@ -273,6 +292,15 @@ main section .bookTicket li {
   }
   100% {
     transform: translate(175px, 40px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+  }
+}
+@keyframes bellAnim {
+  0% {
+    transform: translateX(40px) translateY(40px) rotate(0deg) translate(-50%, -50%);
+    animation-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  }
+  100% {
+    transform: translateX(50px) translateY(40px) rotate(0deg) translate(-50%, -50%);
   }
 }
 /*-------------------------------------------------------------------*/
