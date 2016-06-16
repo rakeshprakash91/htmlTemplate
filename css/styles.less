@@ -90,7 +90,7 @@ footer {
 	}
 }
 
-/*------------------------------------------------------------------*/
+/*------------------------Global CSS--------------------------------*/
 
 header {
 	background-color: black;
@@ -284,6 +284,9 @@ main {
 
 /*-------------------------------------------------------------------*/
 
+
+/*Desktop*/
+
 @media screen and (min-width:640px) and (max-width:1600px) {
 	nav {
 		ul {
@@ -293,6 +296,9 @@ main {
 		}
 	}
 }
+
+/*Mobile/Tablet*/
+
 @media screen and (min-width:120px) and (max-width:640px) {
 	body {
 		position: relative;
@@ -393,14 +399,14 @@ main {
 				.rocket,
 				.train,
 				.bus {
-					width: 80px;
+					width: auto;
 					height: 80px;
 				}
 			}
 		}
 	}
 	.modalDialog > div {
-		width: 15em;
+		width: 17em;
 		position: relative;
 		margin: 10% auto;
 		padding: 5px 20px 13px 20px;
@@ -415,12 +421,7 @@ main {
 		img:hover {
 			z-index: 100;
 			transition: all 200ms ease-in;
-			transform: scale(1.1);
+			transform: scale(1.3);
 		}
 	}
 }
-
-/*-----------------------------------------------------------------*/
-
-
-/*-----------------------------------------------*/
