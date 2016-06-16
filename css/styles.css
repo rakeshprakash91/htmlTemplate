@@ -1,4 +1,4 @@
-/*! html_css3_less 2016-06-15 */
+/*! html_css3_less 2016-06-16 */
 * {
   padding: 0;
   margin: 0;
@@ -381,6 +381,23 @@ main section .bookTicket li {
   body main section .bus {
     width: 80px;
     height: 80px;
+  }
+  .modalDialog > div {
+    width: 15em;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+  }
+  .newDest img {
+    padding: 50px;
+    transition: all 200ms ease-in;
+    transform: scale(1);
+  }
+  .newDest img:hover {
+    z-index: 100;
+    transition: all 200ms ease-in;
+    transform: scale(1.1);
   }
 }
 /*-----------------------------------------------------------------*/
