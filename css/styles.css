@@ -1,4 +1,4 @@
-/*! html_css3_less 2016-06-16 */
+/*! html_css3_less 2016-07-19 */
 * {
   padding: 0;
   margin: 0;
@@ -345,8 +345,8 @@ main section .bookTicket li {
   }
   body header h1 span {
     content: " ";
-    border: 2px solid darkgoldenrod;
-    width: 34px;
+    border: 3px solid darkgoldenrod;
+    width: 35px;
     display: inline-block;
     height: 0px;
     position: relative;
@@ -356,18 +356,18 @@ main section .bookTicket li {
   }
   body header h1 span:after {
     content: " ";
-    border: 2px solid darkgoldenrod;
-    width: 34px;
+    border: 3px solid darkgoldenrod;
+    width: 35px;
     display: inline-block;
     height: 0px;
     position: relative;
-    top: -75px;
+    top: -76px;
     left: -2px;
   }
   body header h1 span:before {
     content: " ";
-    border: 2px solid darkgoldenrod;
-    width: 34px;
+    border: 3px solid darkgoldenrod;
+    width: 35px;
     display: inline-block;
     height: 0px;
     position: relative;
