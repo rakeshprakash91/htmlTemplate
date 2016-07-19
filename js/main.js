@@ -9,8 +9,10 @@ function changePage(elem) {
 }
 /*To prevent body scroll when modal is present*/
 function stopScroll() {
-	document.body.style.overflow = "hidden";
-	console.log('inside')
+
+	setTimeout(function () {
+		document.body.style.overflow = "hidden";
+	}, 100)
 }
 /*To enable body scroll when modal is closed*/
 function enableScroll() {
